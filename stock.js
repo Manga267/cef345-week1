@@ -14,11 +14,16 @@ costPrice: 20,
 sellinfPrice: 28
 }
 ];
+function profitPerUnit(p) {
+  return p.sellingPrice -
+p.costPrice;
+}
 function stockReport() {
   console.log("===== STOCK REPORT =====");
  products.forEach(p => {
   console.log("Product:",p.name);
   console.log("Quantity:",p.qty);
+  console.log("Profit per unit:",profitPerUnit(p));
          if (p.qty < p.minQty) {
   console.log("Status: LOW STOCK");
 } else {
