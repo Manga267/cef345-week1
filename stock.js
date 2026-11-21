@@ -19,7 +19,7 @@ function stockReport() {
  products.forEach(p => {
   console.log("Product:",p.name);
   console.log("Quantity:",p.qty);
-         if (p.qty < 5) {
+         if (p.qty < p.minQty) {
   console.log("Status: LOW STOCK");
 } else {
    console.log("Status: STOCK AVAILABLE");
