@@ -1,7 +1,7 @@
 const products = [
    {
       name: "Product 1",
-      qty: 4,
+      qty: 6,
 min Qty: 5,
 costPrice: 10,
 sellinfPrice: 15
